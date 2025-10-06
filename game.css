@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #eef2f3, #d9e4f5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+h1 {
+  color: #222;
+  text-shadow: 1px 1px 2px #ccc;
+}
+.game-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  text-align: center;
+  width: 420px;
+  animation: fadeIn 0.5s ease;
+}
+input {
+  padding: 8px;
+  margin-top: 10px;
+  width: 160px;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+  text-align: center;
+}
+button {
+  padding: 8px 12px;
+  margin: 10px 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  background: #0073e6;
+  color: white;
+  transition: 0.3s;
+}
+button:hover {
+  background: #005bb5;
+}
+#result {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  min-height: 24px;
+  transition: color 0.3s ease;
+}
+#hint {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #0066cc;
+}
+.log-table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 14px;
+}
+.log-table th, .log-table td {
+  border: 1px solid #ccc;
+  padding: 6px;
+  text-align: center;
+}
+.log-table th {
+  background: #f2f2f2;
+}
+tr:nth-child(even) { background: #f9f9f9; }
+.footer {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+.scoreboard {
+  margin-top: 20px;
+  padding: 12px;
+  background: #eef6ff;
+  border: 1px solid #99c2ff;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+.scoreboard h2 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  color: #0047b3;
+}
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(10px);}
+  to {opacity: 1; transform: translateY(0);}
+}
